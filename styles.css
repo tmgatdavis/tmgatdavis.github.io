@@ -1,0 +1,39 @@
+body {
+    background-color: #f9f0dc;
+    color: #365aa9;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+    position: absolute;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vmax;
+}
+
+footer {
+    width: 100vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Marquee text */
+
+/* For tablets and desktops */
+@media screen and (min-width: 768px) {
+}
