@@ -1,11 +1,12 @@
 body {
     background-color: #f9f0dc;
     color: #365aa9;
-    width: 100%;
+    /* width: 100vmax; */
     height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 35px 35px 0 35px;
 }
 
 .hidden {
@@ -25,11 +26,17 @@ section {
     width: 100vmax;
 }
 
+header {
+    height: max-content;
+}
+
 footer {
     width: 100vmax;
+    height: 196px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 /* Marquee text */
