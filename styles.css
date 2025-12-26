@@ -1,4 +1,37 @@
+@font-face {
+  font-family: 'New Spirit Semibold Condensed'; 
+  src: url('fonts/New-Spirit-SemiBold-Condensed.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'New Spirit Regular'; 
+  src: url('fonts/fonnts.com-New-Spirit-.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'New Spirit Bold'; 
+  src: url('fonts/fonnts.com-New-Spirit-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'New Spirit Light'; 
+  src: url('fonts/fonnts.com-New-Spirit-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
+    font-family: 'New Spirit Semibold Condensed', sans-serif;
     background-color: #f9f0dc;
     color: #365aa9;
     /* width: 100vmax; */
