@@ -11,27 +11,265 @@
 <body>
     <header>
         <img class="logo">
-        <img>
+        <img id="hamburger">
     </header>
     
-    <section class="visible" id="home">
-        <h1>HOME</h1>
-        <img class="hero">
-        <article>
+    <section class="hidden" id="nav-overlay">
+        <div id="nav-items">
+            <h1>HOME</h1>
+            <h1>ABOUT</h1>
+            <h1>EVENTS</h1>
+            <h1>MENU</h1>
+            <h1>GALLERY</h1>
+            <h1>CONTACT</h1>
+        </div>
+    </section>
 
+    <section class="visible" id="home">
+        <!-- <h1>HOME</h1> -->
+        <img class="hero">
+
+        <article id="intro">
+            <div id="marquee">
+                <h4 id="marquee-text">SPACE TO WORK. ROOM TO BREATHE.</h4>
+            </div>
+            
+            <p>Welcome to The Midnight Grind (TMG)! We're a student-run, late-night cafe located at the heart of UC Davis, on a mission to provide students with a safe and welcoming space during the evening hours to study and socialize. We believe in supporting our guests to do their best work, no matter what time of day.</p>
+            <button>Learn More</button>
+            <div id="outline-box">
+                <div>
+                    <h2>HOURS</h2>
+                    <p>Fridays 7PM - 11PM</p>
+                </div>
+                <div>
+                    <h2>LOCATION</h2>
+                    <p>California Hall</p>
+                </div>
+            </div>
         </article>
+
+        <article id="how-to-join">
+            <br>
+            <h1>HOW TO JOIN US</h1>
+            <p>We require guests to RSVP for our events each week. Deadlines to sign up are announced on our Instagram!</p>
+            <button>RSVP Here</button>
+        </article>
+
+        <article id="faq">
+            <h1>FAQ</h1>
+            <div class="q-and-a">
+                <p class="question">Is it a study or social event?</p>
+                <p>Both! TMG is a place where you can study, socialize, or grab a snack and relax. We occasionally have optional activities for guests to participate in if they wish.</p>
+            </div>
+            
+            <div class="q-and-a">
+                <p class="question">What time and where are the events?</p>
+                <p>We currently hold events every Friday from 7PM to 11PM at California Hall (unless announced otherwise). Make sure to follow our Instagram to stay updated!</p>
+            </div>
+
+            <div class="q-and-a">
+                <p class="question">Is the RSVP mandatory?</p>
+                <p>Yes, we are now requiring all guests to RSVP by the deadline in order to attend our events (no exceptions). Please make sure you stay updated via our Instagram and sign up on time!</p>
+            </div>
+
+            <div class="q-and-a">
+                <p class="question">What payment methods do you take?</p>
+                <p>We currently accept Venmo, Zelle, cash, and tap payments via Square.</p>
+            </div>
+        </article>
+        
     </section>
 
     <section class="hidden" id="about">
         <h1>ABOUT</h1>
+        <img class="hero">
+        <p>The Midnight Grind (TMG) is a student-run, late-night cafe located on-campus at UC Davis, created to meet students' need for a safe and welcoming space after dark to study and socialize. Our team of over 50 dedicated volunteers-executive board, officers, and host members-work together to provide one of the few spots for healthy nightlife in a town where nearly everything closes by 8PM.</p>
+
+        <article id="mission">
+            <img>
+            <h2>MISSION</h2>
+            <p>At TMG, we support students academically and holistically to do their best work and create a positive impact on the world. We are motivated by our belief that each of our guests have a unique ability to do good in the world, and we believe in championing them to live our their lives healthily and purposefully-no matter what time it is.</p>
+            <div id="verses-container">
+                <p>Inspired by</p>
+                <div id="verses">
+                    <p>Ephesians 2:10</p>
+                    <p>1 Corinthians 10:31</p>
+                    <p>Jeremiah 29:11</p>
+                </div>
+            </div>
+        </article>
+
+        <article id="values">
+            <img>
+            <h2>VALUES</h2>
+            <div class="values-content">
+                <h3>Low Stress</h3>
+                <p>We maintain a friendly study environment that fosters a supportive community and collaborative work.</p>
+            </div>
+            <div class="values-content">
+                <h3>Intentional Hospitality</h3>
+                <p>We provide food and drinks to fuel students' late night studies and aim to keep our space safe, welcoming, and fun.</p>
+            </div>
+            <div class="values-content">
+                <h3>Student Support</h3>
+                <p>We encourage students to have a healthy work-life balance and collaborate with other student health organizations.</p>
+            </div>
+        </article>
+
+        <article id="history">
+            <img id="timeline">
+        </article>
     </section>
 
     <section class="hidden" id="events">
         <h1>EVENTS</h1>
+        <img class="hero">
+        <article id="event-info">
+            <div class="event-content">
+                <h2>WHAT</h2>
+                <p>Our pop-up events are a study and social space for students to do work or just spend time with friends! Some events may have a special theme with corresponding menu items and activities.</p>
+            </div>
+            <div class="event-content">
+                <h2>WHEN</h2>
+                <p>Fridays from 7PM - 11PM</p>
+            </div>
+            <div class="event-content">
+                <h2>WHERE</h2>
+                <p>California Hall</p>
+            </div>
+            <div class="event-content">
+                <h2>HOW TO JOIN US</h2>
+                <p>Complete our RSVP form by the deadline for each event! Deadlines are announced on our Instagram.</p>
+            </div>
+        </article>
+        <button>RSVP Here!</button>
     </section>
 
     <section class="hidden" id="menu">
         <h1>MENU</h1>
+        <img class="hero">
+        <article id="menu-intro">
+            <p>We like to provide students with something to look forward to every week, whether it's brand new menu items or old-time favorites. All of our menu items are made with love, from scratch.
+                <br><br>
+            Our menu is always changing, so follow us on Instagram to check out our latest offerings!</p>
+            <button>See Our Instagram</button>
+        </article>
+
+        <h1>PAST MENU ITEMS</h1>
+        <p>Here's some of the most popular items we've offered at our pop-up events!</p>
+
+        <div id="menu-items">
+            <div class="item">
+                <img class="item-img">
+                <div class="item-description">
+                    <h3>ICED PEPPERMINT MOCHA</h3>
+                    <p>
+                        $5.00
+                        <br><br>
+                        vanilla cold foam + choc oat milk + candy cane
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="item-img">
+                <div class="item-description">
+                    <h3>SPAM MUSUBIS</h3>
+                    <p>
+                        $3.00
+                        <br><br>
+                        sushi rice + nori + brown sugar soy glaze spam
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="item-img">
+                <div class="item-description">
+                    <h3>ELPHABA'S WICKED MATCHA</h3>
+                    <p>
+                        $6.00
+                        <br><br>
+                        iced matcha latte + cookies and cream
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="item-img">
+                <div class="item-description">
+                    <h3>MAPLE LEAF LATTE</h3>
+                    <p>
+                        $6.00
+                        <br><br>
+                        maple cold foam + pumpkin + caramel drizzle
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="item-img">
+                <div class="item-description">
+                    <h3>JAZZY APPLE TEA</h3>
+                    <p>
+                        $5.00
+                        <br><br>
+                        warm chamomile + spiced apple butter + oat milk
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="item-img">
+                <div class="item-description">
+                    <h3>CINNAMON ROLL COOKIES</h3>
+                    <p>
+                        $2.00
+                        <br><br>
+                        browned butter + cinnamon swirl + glaze drizzle
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="item-img">
+                <div class="item-description">
+                    <h3>SALTED CARAMEL MACCHIATO</h3>
+                    <p>
+                        $5.00
+                        <br><br>
+                        cold brew oat milk latte + salted caramel
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="item-img">
+                <div class="item-description">
+                    <h3>AUTUMN MACARONS</h3>
+                    <p>
+                        $2.00
+                        <br><br>
+                        pumpkin shaped + spiced buttercream + caramel filling
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="item-img">
+                <div class="item-description">
+                    <h3>COLD BREW LATTE</h3>
+                    <p>
+                        $5.00
+                        <br><br>
+                        homemade cold brew + oat milk + brown sugar
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="item-img">
+                <div class="item-description">
+                    <h3>CHOCOLATE CHIP COOKIE</h3>
+                    <p>
+                        $2.00
+                        <br><br>
+                        browned butter + sea salt flakes
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="hidden" id="gallery">
@@ -40,6 +278,25 @@
 
     <section class="hidden" id="contact">
         <h1>CONTACT</h1>
+        <img class="hero">
+        <div id="contact-info">
+            <div class="contact-addr">
+                <img class="contact-img">
+                <p>tmgatdavis@gmail.com</p>
+            </div>
+            <div class="contact-addr">
+                <img class="contact-img">
+                <p>@tmgatdavis</p>
+            </div>
+            <div class="contact-addr">
+                <img class="contact-img">
+                <p>TMG Discord Server</p>
+            </div>
+        </div>
+
+        <p id="contact-paragraph">We'd love to hear from you! Feel free to leave a note for us on our feedback form :)</p>
+
+        <button>Feedback Form</button>
     </section>
 
     <footer>

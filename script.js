@@ -4,6 +4,6 @@
 
     /*
         * Page switching: change section class hidden / visible
-        * Hamburger menu: open / close on icon tap
+        * Hamburger menu: open / close on icon tap. change footer visibility.
     */
 }())

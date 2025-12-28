@@ -1,3 +1,4 @@
+/* FONT DECLARATIONS */
 @font-face {
   font-family: 'New Spirit Semibold Condensed'; 
   src: url('fonts/New-Spirit-SemiBold-Condensed.otf') format('opentype');
@@ -30,6 +31,34 @@
   font-display: swap;
 }
 
+/* TYPOGRAPHY RULES */
+h1 {
+    font-family: 'New Spirit Semibold Condensed';
+    font-size: 36px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'New Spirit Semibold Condensed';
+    font-size: 20px;
+}
+
+h3 {
+    font-family: 'New Spirit Semibold Condensed';
+    font-size: 16px;
+}
+
+h4 {
+    font-family: 'New Spirit Semibold Condensed';
+    font-size: 48px;
+}
+
+p {
+    font-family: 'New Spirit Regular';
+    font-size: 14px;
+}
+
+/* GENERAL RULES */
 body {
     font-family: 'New Spirit Semibold Condensed', sans-serif;
     font-family: 'New Spirit Semibold Condensed', sans-serif;
@@ -40,32 +69,41 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 35px 35px 0 35px;
+    gap: 30px;
+    padding: 89px 0px;
+    overflow-x: clip;
 }
 
 .hidden {
     visibility: hidden;
+    position: absolute;
+    height: 50vmin;
+    overflow: hidden;
 }
 
 .visible {
     visibility: visible;
-    position: absolute;
+    position: relative;
 }
 
 section {
-    position: relative;
+    /* position: relative; */
+    /* top: 195px; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vmax;
+    width: 100%;
 }
 
 header {
     height: max-content;
+    /* display: flex;
+    gap: 64px;
+    justify-content: right; */
 }
 
 footer {
-    width: 100vmax;
+    width: 100%;
     height: 196px;
     display: flex;
     flex-direction: column;
@@ -73,7 +111,112 @@ footer {
     text-align: center;
 }
 
+.logo {
+    width: 85px;
+    height: 76px;
+    background-color: grey;
+}
+
+#hamburger {
+    width: 48px;
+    height: 48px;
+    background-color: grey;
+    position: absolute;
+    top: 89px;
+    right: 35px;
+}
+
+.hero {
+    width: 100vmin;
+    height: 491px;
+    background-color: grey;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+    padding: 50px 35px 50px 35px;
+}
+
+button {
+    background-color: #141043;
+    width: fill;
+    height: 48px;
+    color: #edd498;
+    font-family: 'New Spirit Regular';
+    font-size: 16px;
+    border-radius: 100px;
+    /* fix the stupid button shadow thing */
+}
+
+/* HOME PAGE */
+
 /* Marquee text */
+#marquee {
+    width: 300px; /* FIXME */
+    height: 50px;
+    overflow: clip;
+    display: flex;
+    justify-content: left;
+    /* background-color: grey; */
+}
+
+#marquee-text {
+    width: 200vmin;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+}
+
+/* Intro */
+#outline-box {
+    display: flex;
+    border: #141043 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+    gap: auto;
+    justify-content: space-between;
+}
+
+#outline-box div {
+    width: 131px;
+}
+
+/* How To Join Us */
+#how-to-join {
+    background-color: #365aa9;
+    color: #f9f0dc;
+}
+
+#how-to-join h1 {
+    color: #edd498;
+    /* text-align: center; */
+}
+
+/* FAQ */
+.question {
+    color:#f9f0dc;
+    background-color: #365aa9;
+    padding: 0 10px 0 10px;
+    width: fill;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.q-and-a {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.q-and-a p {
+    margin: 0;
+}
 
 /* For tablets and desktops */
 @media screen and (min-width: 768px) {
