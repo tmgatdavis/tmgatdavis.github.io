@@ -16,12 +16,12 @@
     
     <section class="hidden" id="nav-overlay">
         <div id="nav-items">
-            <h1>HOME</h1>
-            <h1>ABOUT</h1>
-            <h1>EVENTS</h1>
-            <h1>MENU</h1>
-            <h1>GALLERY</h1>
-            <h1>CONTACT</h1>
+            <h1 class="navlink">HOME</h1>
+            <h1 class="navlink">ABOUT</h1>
+            <h1 class="navlink">EVENTS</h1>
+            <h1 class="navlink">MENU</h1>
+            <h1 class="navlink">GALLERY</h1>
+            <h1 class="navlink">CONTACT</h1>
         </div>
     </section>
 
@@ -30,8 +30,16 @@
         <img class="hero">
 
         <article id="intro">
-            <div id="marquee">
-                <h4 id="marquee-text">SPACE TO WORK. ROOM TO BREATHE.</h4>
+            <div id="marquee-container">
+                <div id="marquee-content">
+                    <h4>SPACE TO WORK. ROOM TO BREATHE.</h4>
+                    <!-- add mini logo here -->
+                    <!-- <h4>SPACE TO WORK. ROOM TO BREATHE.</h4>
+                    <h4>SPACE TO WORK. ROOM TO BREATHE.</h4>
+                    <h4>SPACE TO WORK. ROOM TO BREATHE.</h4> -->
+                    <!-- <h4>SPACE TO WORK. ROOM TO BREATHE.</h4> -->
+                </div>
+                <!-- <h4 id="marquee-text">SPACE TO WORK. ROOM TO BREATHE.</h4> -->
             </div>
             
             <p>Welcome to The Midnight Grind (TMG)! We're a student-run, late-night cafe located at the heart of UC Davis, on a mission to provide students with a safe and welcoming space during the evening hours to study and socialize. We believe in supporting our guests to do their best work, no matter what time of day.</p>
@@ -83,41 +91,51 @@
     <section class="hidden" id="about">
         <h1>ABOUT</h1>
         <img class="hero">
-        <p>The Midnight Grind (TMG) is a student-run, late-night cafe located on-campus at UC Davis, created to meet students' need for a safe and welcoming space after dark to study and socialize. Our team of over 50 dedicated volunteers-executive board, officers, and host members-work together to provide one of the few spots for healthy nightlife in a town where nearly everything closes by 8PM.</p>
+        <article id="about-description">
+            <p>The Midnight Grind (TMG) is a student-run, late-night cafe located on-campus at UC Davis, created to meet students' need for a safe and welcoming space after dark to study and socialize. Our team of over 50 dedicated volunteers-executive board, officers, and host members-work together to provide one of the few spots for healthy nightlife in a town where nearly everything closes by 8PM.</p>
+        </article>
 
         <article id="mission">
-            <img>
-            <h2>MISSION</h2>
-            <p>At TMG, we support students academically and holistically to do their best work and create a positive impact on the world. We are motivated by our belief that each of our guests have a unique ability to do good in the world, and we believe in championing them to live our their lives healthily and purposefully-no matter what time it is.</p>
+            <img class="about-img">
+            <div class="about-content">
+                <h2>MISSION</h2>
+                <p>At TMG, we support students academically and holistically to do their best work and create a positive impact on the world. We are motivated by our belief that each of our guests have a unique ability to do good in the world, and we believe in championing them to live our their lives healthily and purposefully-no matter what time it is.</p>
+            </div>
+            
             <div id="verses-container">
                 <p>Inspired by</p>
                 <div id="verses">
-                    <p>Ephesians 2:10</p>
-                    <p>1 Corinthians 10:31</p>
-                    <p>Jeremiah 29:11</p>
+                    <h5>Ephesians 2:10</h5>
+                    <h5>1 Corinthians 10:31</h5>
+                    <h5>Jeremiah 29:11</h5>
                 </div>
             </div>
         </article>
 
         <article id="values">
-            <img>
-            <h2>VALUES</h2>
-            <div class="values-content">
-                <h3>Low Stress</h3>
-                <p>We maintain a friendly study environment that fosters a supportive community and collaborative work.</p>
-            </div>
-            <div class="values-content">
-                <h3>Intentional Hospitality</h3>
-                <p>We provide food and drinks to fuel students' late night studies and aim to keep our space safe, welcoming, and fun.</p>
-            </div>
-            <div class="values-content">
-                <h3>Student Support</h3>
-                <p>We encourage students to have a healthy work-life balance and collaborate with other student health organizations.</p>
+            <img class="about-img">
+            <div class="about-content">
+                <h2>VALUES</h2>
+                <div class="values-content">
+                    <h3>Low Stress</h3>
+                    <p>We maintain a friendly study environment that fosters a supportive community and collaborative work.</p>
+                </div>
+                <div class="values-content">
+                    <h3>Intentional Hospitality</h3>
+                    <p>We provide food and drinks to fuel students' late night studies and aim to keep our space safe, welcoming, and fun.</p>
+                </div>
+                <div class="values-content">
+                    <h3>Student Support</h3>
+                    <p>We encourage students to have a healthy work-life balance and collaborate with other student health organizations.</p>
+                </div>
             </div>
         </article>
 
         <article id="history">
             <img id="timeline">
+            <div>
+                <h2>HISTORY</h2>
+            </div>
         </article>
     </section>
 
@@ -138,7 +156,7 @@
                 <p>California Hall</p>
             </div>
             <div class="event-content">
-                <h2>HOW TO JOIN US</h2>
+                <h2>HOW TO<br>JOIN US</h2>
                 <p>Complete our RSVP form by the deadline for each event! Deadlines are announced on our Instagram.</p>
             </div>
         </article>
@@ -156,7 +174,7 @@
         </article>
 
         <h1>PAST MENU ITEMS</h1>
-        <p>Here's some of the most popular items we've offered at our pop-up events!</p>
+        <p id="past-items">Here's some of the most popular menu items we've offered at our pop-up events!</p>
 
         <div id="menu-items">
             <div class="item">
@@ -274,6 +292,23 @@
 
     <section class="hidden" id="gallery">
         <h1>GALLERY</h1>
+        <div id="gallery-imgs">
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+        </div>
     </section>
 
     <section class="hidden" id="contact">
@@ -294,7 +329,7 @@
             </div>
         </div>
 
-        <p id="contact-paragraph">We'd love to hear from you! Feel free to leave a note for us on our feedback form :)</p>
+        <p id="contact-paragraph">We'd love to hear from you!<br>Feel free to leave a note for us on our feedback form :)</p>
 
         <button>Feedback Form</button>
     </section>
