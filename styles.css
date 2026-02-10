@@ -70,6 +70,10 @@ p {
 }
 
 /* GENERAL RULES */
+html {
+    overflow-x: clip;
+}
+
 body {
     font-family: 'New Spirit Semibold Condensed', sans-serif;
     font-family: 'New Spirit Semibold Condensed', sans-serif;
