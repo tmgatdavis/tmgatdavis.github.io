@@ -92,4 +92,22 @@
         page.classList.remove('hidden');
         page.classList.add('visible');
     }
+
+    // BUTTONS
+    let learnMoreBtn = document.querySelector('#learn-more');
+    learnMoreBtn.addEventListener('click', function(){
+        switchPage("ABOUT");
+    });
+
+    let rsvpBtn = document.querySelectorAll('.rsvp-btn');
+    rsvpBtn.forEach(function(btn){
+        btn.addEventListener('click', function(){
+            window.open("https://forms.gle/dG5Ymoe2yH7rCxzf8", "_blank");
+        });
+    });
+
+    let instagramBtn = document.querySelector('#instagram-btn');
+    instagramBtn.addEventListener('click', function(){
+        window.open("https://www.instagram.com/tmgatdavis/", "_blank");
+    });
 }())

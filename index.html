@@ -10,8 +10,8 @@
 </head>
 <body>
     <header>
-        <img class="logo">
-        <img id="hamburger">
+        <img class="logo" src="images/logo.png">
+        <img id="hamburger" src="images/hamburger-menu.png">
     </header>
     
     <section class="hidden" id="nav-overlay">
@@ -31,7 +31,7 @@
 
         <article id="intro">
             <div id="marquee-container">
-                <div id="marquee-content">
+                <div id="marquee-content" class="hidden">
                     <h4>SPACE TO WORK. ROOM TO BREATHE.</h4>
                     <!-- add mini logo here -->
                     <!-- <h4>SPACE TO WORK. ROOM TO BREATHE.</h4>
@@ -43,7 +43,7 @@
             </div>
             
             <p>Welcome to The Midnight Grind (TMG)! We're a student-run, late-night cafe located at the heart of UC Davis, on a mission to provide students with a safe and welcoming space during the evening hours to study and socialize. We believe in supporting our guests to do their best work, no matter what time of day.</p>
-            <button>Learn More</button>
+            <button id="learn-more">Learn More</button>
             <div id="outline-box">
                 <div>
                     <h2>HOURS</h2>
@@ -60,29 +60,29 @@
             <br>
             <h1>HOW TO JOIN US</h1>
             <p>We require guests to RSVP for our events each week. Deadlines to sign up are announced on our Instagram!</p>
-            <button>RSVP Here</button>
+            <button class="rsvp-btn">RSVP Here</button>
         </article>
 
         <article id="faq">
             <h1>FAQ</h1>
             <div class="q-and-a">
                 <p class="question">Is it a study or social event?</p>
-                <p>Both! TMG is a place where you can study, socialize, or grab a snack and relax. We occasionally have optional activities for guests to participate in if they wish.</p>
+                <p class="answer">Both! TMG is a place where you can study, socialize, or grab a snack and relax. We occasionally have optional activities for guests to participate in if they wish.</p>
             </div>
             
             <div class="q-and-a">
                 <p class="question">What time and where are the events?</p>
-                <p>We currently hold events every Friday from 7PM to 11PM at California Hall (unless announced otherwise). Make sure to follow our Instagram to stay updated!</p>
+                <p class="answer">We currently hold events every Friday from 7PM to 11PM at California Hall (unless announced otherwise). Make sure to follow our Instagram to stay updated!</p>
             </div>
 
             <div class="q-and-a">
                 <p class="question">Is the RSVP mandatory?</p>
-                <p>Yes, we are now requiring all guests to RSVP by the deadline in order to attend our events (no exceptions). Please make sure you stay updated via our Instagram and sign up on time!</p>
+                <p class="answer">Yes, we are now requiring all guests to RSVP by the deadline in order to attend our events (no exceptions). Please make sure you stay updated via our Instagram and sign up on time!</p>
             </div>
 
             <div class="q-and-a">
                 <p class="question">What payment methods do you take?</p>
-                <p>We currently accept Venmo, Zelle, cash, and tap payments via Square.</p>
+                <p class="answer">We currently accept tap payments via Square and cash.</p>
             </div>
         </article>
         
@@ -131,12 +131,12 @@
             </div>
         </article>
 
-        <article id="history">
+        <!-- <article id="history">
             <img id="timeline">
             <div>
                 <h2>HISTORY</h2>
             </div>
-        </article>
+        </article> -->
     </section>
 
     <section class="hidden" id="events">
@@ -160,7 +160,7 @@
                 <p>Complete our RSVP form by the deadline for each event! Deadlines are announced on our Instagram.</p>
             </div>
         </article>
-        <button>RSVP Here!</button>
+        <button class="rsvp-btn">RSVP Here!</button>
     </section>
 
     <section class="hidden" id="menu">
@@ -170,7 +170,7 @@
             <p>We like to provide students with something to look forward to every week, whether it's brand new menu items or old-time favorites. All of our menu items are made with love, from scratch.
                 <br><br>
             Our menu is always changing, so follow us on Instagram to check out our latest offerings!</p>
-            <button>See Our Instagram</button>
+            <button id="instagram-btn">See Our Instagram</button>
         </article>
 
         <h1>PAST MENU ITEMS</h1>
@@ -316,16 +316,19 @@
         <img class="hero">
         <div id="contact-info">
             <div class="contact-addr">
-                <img class="contact-img">
-                <p>tmgatdavis@gmail.com</p>
+                <img class="contact-img" src="images/email-logo.png">
+                <!-- <p>tmgatdavis@gmail.com</p> -->
+                 <a href="mailto:tmgatdavis@gmail.com">tmgatdavis@gmail.com</a>
             </div>
             <div class="contact-addr">
-                <img class="contact-img">
-                <p>@tmgatdavis</p>
+                <img class="contact-img" src="images/instagram-logo.png">
+                <!-- <p>@tmgatdavis</p> -->
+                 <a href="https://www.instagram.com/tmgatdavis/" target="_blank">Instagram</a>
             </div>
             <div class="contact-addr">
-                <img class="contact-img">
-                <p>TMG Discord Server</p>
+                <img class="contact-img" src="images/discord-logo.png">
+                <!-- <p>TMG Discord Server</p> -->
+                <a href="https://discord.gg/3xT68755GF" target="_blank">Discord</a>
             </div>
         </div>
 
@@ -335,8 +338,8 @@
     </section>
 
     <footer>
-        <img class="logo">
-        <h3>FRIDAYS 7PM - 11PM<br>CALIFORNIA HALL</h3>
+        <img class="logo" src="images/logo.png">
+        <h3><br>FRIDAYS 7PM - 11PM<br>UC DAVIS</h3>
     </footer>
 </body>
 </html>

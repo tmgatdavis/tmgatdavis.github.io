@@ -126,14 +126,14 @@ footer {
 
 .logo {
     width: 85px;
-    height: 76px;
-    background-color: grey;
+    /* height: 76px; */
+    /* background-color: grey; */
 }
 
 #hamburger {
     width: 48px;
     height: 48px;
-    background-color: grey;
+    /* background-color: grey; */
     position: absolute;
     top: 89px;
     right: 35px;
@@ -237,6 +237,11 @@ button {
     border-radius: 10px;
     display: flex;
     align-items: center;
+}
+
+.answer {
+    width: fill;
+    padding: 0 10px 0 10px;
 }
 
 .q-and-a {
@@ -388,16 +393,25 @@ button {
     align-items: center;
 }
 
+.contact-addr a {
+    color: #365aa9;
+    font-family: 'New Spirit Regular';
+    font-size: 14px;
+    text-decoration: none;
+}
+
 .contact-img {
     width: 60px;
     height: 60px;
-    background-color: grey;
+    /* background-color: grey; */
 }
 
 #contact-paragraph {
     text-align: center;
     width: 227px;
 }
+
+
 
 /* == GALLERY == */
 #gallery-imgs {
@@ -424,5 +438,11 @@ button {
 
 
 /* For tablets and desktops */
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
+} */
+
+/* Keeping it mobile only for now */
+@media (min-width: 410px) {
+    body { display: none; }
+    .desktop-message { display: block; }
 }
