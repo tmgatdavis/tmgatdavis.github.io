@@ -143,12 +143,6 @@ footer {
     right: 35px;
 }
 
-.hero {
-    width: 100vmin;
-    height: 491px;
-    background-color: grey;
-}
-
 article {
     display: flex;
     flex-direction: column;
@@ -169,10 +163,20 @@ button {
     border-style: none;
 }
 
+.hero {
+    width: 100vmin;
+    height: 491px;
+    object-fit: cover;
+}
+
 /* == HOME PAGE == */
 #intro {
     width: 324px;
     /* FIXME later */
+}
+
+#home .hero {
+    background-image: url('images/home-hero-temp.gif');
 }
 
 /* Marquee text */
@@ -224,6 +228,9 @@ button {
     background-color: #365aa9;
     color: #f9f0dc;
     padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #how-to-join h1 {
@@ -268,6 +275,21 @@ button {
     text-align: center;
 }
 
+#about .hero {
+    background-image: url('images/about-hero.jpg');
+}
+
+#mission .about-img {
+    width: 323px;
+    height: 258px;
+    background-image: url('images/about-mission.jpg');
+    object-fit: cover;
+}
+
+#values .about-img {
+    background-image: url('images/about-values.jpeg');
+    object-fit: cover;}
+
 /* Mission */
 #mission {
     overflow-x: visible;
@@ -298,7 +320,7 @@ button {
 
 #verses {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around  ;
     align-items: center;
     color: #edd498;
     padding-left: 90px;
@@ -352,6 +374,10 @@ button {
     margin: 0;
 }
 
+#event-info .hero {
+    background-image: url('images/events.jpeg');
+}
+
 /* == MENU == */
 #past-items {
     width: 323px;
@@ -367,7 +393,8 @@ button {
 
 .item {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 35px;
     /* width: fill; */
 }
 
@@ -379,6 +406,10 @@ button {
 
 .item-description {
     width: 210px;
+}
+
+#menu .hero {
+    background-image: url('images/menu.JPG');
 }
 
 /* == CONTACT == */
@@ -415,6 +446,10 @@ button {
     width: 227px;
 }
 
+#contact .hero {
+    background-image: url('images/contact.jpeg');
+}
+
 
 
 /* == GALLERY == */
@@ -440,13 +475,22 @@ button {
     margin: 30px 0 30px 0;
 }
 
+#nav-items a, #nav-items a:visited {
+    font-family: 'New Spirit Semibold Condensed';
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+    color: #365aa9;
+    text-decoration: none;
+}
+
 
 /* For tablets and desktops */
 /* @media screen and (min-width: 768px) {
 } */
 
 /* Keeping it mobile only for now */
-@media (min-width: 410px) {
+@media (min-width: 432px) {
     body { display: none; }
     .desktop-message { display: block; }
 }

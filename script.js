@@ -1,4 +1,4 @@
-(function(){
+(function () {
     'use strict';
     console.log('reading js');
 
@@ -22,15 +22,15 @@
     let lastOpenedPage;
 
     // Allow logo tap to return to home page
-    homelink.forEach(function(logo){
-        logo.addEventListener('click', function(){
+    homelink.forEach(function (logo) {
+        logo.addEventListener('click', function () {
             switchPage("HOME");
         });
     });
-    
+
     // Handling opening nav
-    nav.addEventListener('click', function (){
-        if(currPage.id == 'nav-overlay') {
+    nav.addEventListener('click', function () {
+        if (currPage.id == 'nav-overlay') {
             show(lastOpenedPage);
             hide(currPage);
             currPage = lastOpenedPage;
@@ -45,8 +45,8 @@
 
     // Handling page switching via nav
     let navlinks = document.querySelectorAll('.navlink');
-    navlinks.forEach(function (link){
-        link.addEventListener('click', function(){
+    navlinks.forEach(function (link) {
+        link.addEventListener('click', function () {
             switchPage(link.innerHTML);
         });
     });
@@ -54,29 +54,30 @@
     function switchPage(goto) {
         console.log(currPage);
         hide(currPage);
-        switch(goto) {
-            case 'HOME': 
+        switch (goto) {
+            case 'HOME':
                 show(home);
                 currPage = home;
                 break;
-            case 'ABOUT': 
-                show(about);
-                currPage = about;
-                break;
-            case 'EVENTS': 
-                show(events); 
+            case 'ABOUT':
+            // show(about);
+            // currPage = about;
+            // break;
+
+            case 'EVENTS':
+                show(events);
                 currPage = events;
                 break;
-            case 'MENU': 
-                show(menu); 
+            case 'MENU':
+                show(menu);
                 currPage = menu;
                 break;
-            case 'GALLERY': 
-                show(gallery); 
+            case 'GALLERY':
+                show(gallery);
                 currPage = gallery;
                 break;
-            case 'CONTACT': 
-                show(contact); 
+            case 'CONTACT':
+                show(contact);
                 currPage = contact;
                 break;
             default: break;
@@ -95,19 +96,25 @@
 
     // BUTTONS
     let learnMoreBtn = document.querySelector('#learn-more');
-    learnMoreBtn.addEventListener('click', function(){
-        switchPage("ABOUT");
-    });
+    if (learnMoreBtn) {
+        learnMoreBtn.addEventListener('click', function () {
+            window.location.href = "https://www.tmgatdavis.com/about";
+        });
+    }
 
     let rsvpBtn = document.querySelectorAll('.rsvp-btn');
-    rsvpBtn.forEach(function(btn){
-        btn.addEventListener('click', function(){
-            window.open("https://forms.gle/dG5Ymoe2yH7rCxzf8", "_blank");
+    if (rsvpBtn) {
+        rsvpBtn.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                window.open("https://forms.gle/dG5Ymoe2yH7rCxzf8", "_blank");
+            });
         });
-    });
+    }
 
     let instagramBtn = document.querySelector('#instagram-btn');
-    instagramBtn.addEventListener('click', function(){
-        window.open("https://www.instagram.com/tmgatdavis/", "_blank");
-    });
+    if (instagramBtn) {
+        instagramBtn.addEventListener('click', function () {
+            window.open("https://www.instagram.com/tmgatdavis/", "_blank");
+        });
+    }
 }())
