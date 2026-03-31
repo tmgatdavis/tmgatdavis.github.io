@@ -98,6 +98,481 @@
 
     </section>
 
+    <!-- MAILJET NEWSLETTER SIGNUP -->
+
+    <!-- section header -->
+    <img src="images/cori-blue.png" width="200px">
+    <h1>Join Our Newsletter!</h1>
+
+    <!-- form -->
+    <form class="pas-form" autocomplete="off"
+        style="padding: 0px 35px 50px 35px; max-width: 100%; background-color: #ffffff00; display: flex; flex-direction: column; gap: 20px; align-items: center;">
+        <div class="pas-input" style="padding: 10px 25px 10px 25px; display: flex; gap: 10px; width: 100%;">
+            <label class="pas-input-text" for="email" style="text-align: left;"><span
+                    style="color:#365aa9;font-family: 'New Spirit';font-size:14px;">Email*</span></label><input
+                class="pas-email pas-input-input" required="required" type="email" data-field="1" name="email"
+                id="email" maxlength="255" autocomplete="email"
+                style="border: 1px solid #365aa9; border-radius: 5px; width: 100%;">
+        </div><label class="pas-optin" id="consent-label" for="consent"
+            style="padding: 10px 25px; display: flex; gap: 10px; width: 100%;"><input id="consent" name="consent"
+                required="true" type="checkbox">
+            <div class="pas-optin-text-container">
+                <p class="pas-optin-text"><span style="color:#365aa9;font-family: 'New Spirit';font-size:14px;">I agree
+                        to
+                        receive emails with the understanding that I may easily opt-out of these communications at
+                        any time after signing up.</span></p>
+            </div>
+        </label>
+        <div class="pas-submit" style="
+            background-color: #141043;
+            width: 324px;
+            height: 48px;
+            color: #edd498;
+            font-family: 'New Spirit Regular';
+            font-size: 16px;
+            border-radius: 100px;
+            border-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;"><button>
+                <span class="submit-text">Sign up</span>
+                <div class="submit-loader"></div>
+            </button>
+        </div>
+        <section class="pas-section"
+            style="background-repeat: repeat; padding: 20px 0 20px 0; vertical-align: top; display: none;">
+            <div class="pas-column pas-column-lp" style="width: 100%; align-self: center;">
+                <div class="pas-image" style="display: flex; justify-content: center; padding: 0px;"><img src=""
+                        title="Mailjet Logo" alt="Mailjet Logo"
+                        style="border: none; height: 48px; max-width: 100%; width: 240px;"></div>
+            </div>
+        </section>
+    </form>
+    <script type="module">
+
+        /*! iFrame Resizer (iframeSizer.contentWindow.min.js) - v4.3.2 - 2021-10-18
+        *  Copyright: (c) 2021 David J. Bradshaw - dave@bradshaw.net
+        *  License: MIT
+        */
+        !function (c) { if ("undefined" != typeof window) { var i = !0, o = 10, r = "", a = 0, u = "", s = null, d = "", l = !1, f = { resize: 1, click: 1 }, m = 128, h = !0, g = 1, n = "bodyOffset", p = n, v = !0, y = "", w = {}, b = 32, T = null, E = !1, O = !1, S = "[iFrameSizer]", M = S.length, I = "", N = { max: 1, min: 1, bodyScroll: 1, documentElementScroll: 1 }, A = "child", C = !0, z = window.parent, k = "*", R = 0, x = !1, e = null, L = 16, F = 1, t = "scroll", P = t, D = window, j = function () { re("onMessage function not defined") }, q = function () { }, H = function () { }, W = { height: function () { return re("Custom height calculation function not defined"), document.documentElement.offsetHeight }, width: function () { return re("Custom width calculation function not defined"), document.body.scrollWidth } }, B = {}, J = !1; try { var U = Object.create({}, { passive: { get: function () { J = !0 } } }); window.addEventListener("test", ee, U), window.removeEventListener("test", ee, U) } catch (e) { } var V, X, Y, K, Q, G, Z = { bodyOffset: function () { return document.body.offsetHeight + pe("marginTop") + pe("marginBottom") }, offset: function () { return Z.bodyOffset() }, bodyScroll: function () { return document.body.scrollHeight }, custom: function () { return W.height() }, documentElementOffset: function () { return document.documentElement.offsetHeight }, documentElementScroll: function () { return document.documentElement.scrollHeight }, max: function () { return Math.max.apply(null, ye(Z)) }, min: function () { return Math.min.apply(null, ye(Z)) }, grow: function () { return Z.max() }, lowestElement: function () { return Math.max(Z.bodyOffset() || Z.documentElementOffset(), ve("bottom", be())) }, taggedElement: function () { return we("bottom", "data-iframe-height") } }, $ = { bodyScroll: function () { return document.body.scrollWidth }, bodyOffset: function () { return document.body.offsetWidth }, custom: function () { return W.width() }, documentElementScroll: function () { return document.documentElement.scrollWidth }, documentElementOffset: function () { return document.documentElement.offsetWidth }, scroll: function () { return Math.max($.bodyScroll(), $.documentElementScroll()) }, max: function () { return Math.max.apply(null, ye($)) }, min: function () { return Math.min.apply(null, ye($)) }, rightMostElement: function () { return ve("right", be()) }, taggedElement: function () { return we("right", "data-iframe-width") } }, _ = (V = Te, Q = null, G = 0, function () { var e = Date.now(), t = L - (e - (G = G || e)); return X = this, Y = arguments, t <= 0 || L < t ? (Q && (clearTimeout(Q), Q = null), G = e, K = V.apply(X, Y), Q || (X = Y = null)) : Q = Q || setTimeout(Ee, t), K }); te(window, "message", function (t) { var n = { init: function () { y = t.data, z = t.source, ae(), h = !1, setTimeout(function () { v = !1 }, m) }, reset: function () { v ? ie("Page reset ignored by init") : (ie("Page size reset by host page"), Me("resetPage")) }, resize: function () { Oe("resizeParent", "Parent window requested size check") }, moveToAnchor: function () { w.findTarget(i()) }, inPageLink: function () { this.moveToAnchor() }, pageInfo: function () { var e = i(); ie("PageInfoFromParent called from parent: " + e), H(JSON.parse(e)), ie(" --") }, message: function () { var e = i(); ie("onMessage called from parent: " + e), j(JSON.parse(e)), ie(" --") } }; function o() { return t.data.split("]")[1].split(":")[0] } function i() { return t.data.substr(t.data.indexOf(":") + 1) } function r() { return t.data.split(":")[2] in { true: 1, false: 1 } } function e() { var e = o(); e in n ? n[e]() : ("undefined" == typeof module || !module.exports) && "iFrameResize" in window || "jQuery" in window && "iFrameResize" in window.jQuery.prototype || r() || re("Unexpected message (" + t.data + ")") } S === ("" + t.data).substr(0, M) && (!1 === h ? e() : r() ? n.init() : ie('Ignored message of type "' + o() + '". Received before initialization.')) }), te(window, "readystatechange", Ae), Ae() } function ee() { } function te(e, t, n, o) { e.addEventListener(t, n, !!J && (o || {})) } function ne(e) { return e.charAt(0).toUpperCase() + e.slice(1) } function oe(e) { return S + "[" + I + "] " + e } function ie(e) { E && "object" == typeof window.console && console.log(oe(e)) } function re(e) { "object" == typeof window.console && console.warn(oe(e)) } function ae() { function e(e) { return "true" === e } var t; function n(e) { Ne(0, 0, e.type, e.screenY + ":" + e.screenX) } function o(e, t) { ie("Add event listener: " + t), te(window.document, e, n) } t = y.substr(M).split(":"), I = t[0], a = c !== t[1] ? Number(t[1]) : a, l = c !== t[2] ? e(t[2]) : l, E = c !== t[3] ? e(t[3]) : E, b = c !== t[4] ? Number(t[4]) : b, i = c !== t[6] ? e(t[6]) : i, u = t[7], p = c !== t[8] ? t[8] : p, r = t[9], d = t[10], R = c !== t[11] ? Number(t[11]) : R, w.enable = c !== t[12] && e(t[12]), A = c !== t[13] ? t[13] : A, P = c !== t[14] ? t[14] : P, O = c !== t[15] ? Boolean(t[15]) : O, ie("Initialising iFrame (" + window.location.href + ")"), function () { function e(e, t) { return "function" == typeof e && (ie("Setup custom " + t + "CalcMethod"), W[t] = e, e = "custom"), e } "iFrameResizer" in window && Object === window.iFrameResizer.constructor && (function () { var e = window.iFrameResizer; ie("Reading data from page: " + JSON.stringify(e)), Object.keys(e).forEach(ue, e), j = "onMessage" in e ? e.onMessage : j, q = "onReady" in e ? e.onReady : q, k = "targetOrigin" in e ? e.targetOrigin : k, p = "heightCalculationMethod" in e ? e.heightCalculationMethod : p, P = "widthCalculationMethod" in e ? e.widthCalculationMethod : P }(), p = e(p, "height"), P = e(P, "width")); ie("TargetOrigin for parent set to: " + k) }(), function () { c === u && (u = a + "px"); ce("margin", function (e, t) { -1 !== t.indexOf("-") && (re("Negative CSS value ignored for " + e), t = ""); return t }("margin", u)) }(), ce("background", r), ce("padding", d), (t = document.createElement("div")).style.clear = "both", t.style.display = "block", t.style.height = "0", document.body.appendChild(t), fe(), me(), document.documentElement.style.height = "", document.body.style.height = "", ie('HTML & body height set to "auto"'), ie("Enable public methods"), D.parentIFrame = { autoResize: function (e) { return !0 === e && !1 === i ? (i = !0, he()) : !1 === e && !0 === i && (i = !1, de("remove"), null !== s && s.disconnect(), clearInterval(T)), Ne(0, 0, "autoResize", JSON.stringify(i)), i }, close: function () { Ne(0, 0, "close") }, getId: function () { return I }, getPageInfo: function (e) { "function" == typeof e ? (H = e, Ne(0, 0, "pageInfo")) : (H = function () { }, Ne(0, 0, "pageInfoStop")) }, moveToAnchor: function (e) { w.findTarget(e) }, reset: function () { Ie("parentIFrame.reset") }, scrollTo: function (e, t) { Ne(t, e, "scrollTo") }, scrollToOffset: function (e, t) { Ne(t, e, "scrollToOffset") }, sendMessage: function (e, t) { Ne(0, 0, "message", JSON.stringify(e), t) }, setHeightCalculationMethod: function (e) { p = e, fe() }, setWidthCalculationMethod: function (e) { P = e, me() }, setTargetOrigin: function (e) { ie("Set targetOrigin: " + e), k = e }, size: function (e, t) { Oe("size", "parentIFrame.size(" + ((e || "") + (t ? "," + t : "")) + ")", e, t) } }, !0 === O && (o("mouseenter", "Mouse Enter"), o("mouseleave", "Mouse Leave")), he(), w = function () { function i(e) { var t = e.getBoundingClientRect(), e = { x: window.pageXOffset !== c ? window.pageXOffset : document.documentElement.scrollLeft, y: window.pageYOffset !== c ? window.pageYOffset : document.documentElement.scrollTop }; return { x: parseInt(t.left, 10) + parseInt(e.x, 10), y: parseInt(t.top, 10) + parseInt(e.y, 10) } } function n(e) { var t, n = e.split("#")[1] || e, e = decodeURIComponent(n), o = document.getElementById(e) || document.getElementsByName(e)[0]; c !== o ? (t = i(t = o), ie("Moving to in page link (#" + n + ") at x: " + t.x + " y: " + t.y), Ne(t.y, t.x, "scrollToOffset")) : (ie("In page link (#" + n + ") not found in iFrame, so sending to parent"), Ne(0, 0, "inPageLink", "#" + n)) } function e() { var e = window.location.hash, t = window.location.href; "" !== e && "#" !== e && n(t) } function t() { Array.prototype.forEach.call(document.querySelectorAll('a[href^="#"]'), function (e) { "#" !== e.getAttribute("href") && te(e, "click", function (e) { e.preventDefault(), n(this.getAttribute("href")) }) }) } function o() { Array.prototype.forEach && document.querySelectorAll ? (ie("Setting up location.hash handlers"), t(), te(window, "hashchange", e), setTimeout(e, m)) : re("In page linking not fully supported in this browser! (See README.md for IE8 workaround)") } w.enable ? o() : ie("In page linking not enabled"); return { findTarget: n } }(), Oe("init", "Init message from host page"), q() } function ue(e) { var t = e.split("Callback"); 2 === t.length && (this[t = "on" + t[0].charAt(0).toUpperCase() + t[0].slice(1)] = this[e], delete this[e], re("Deprecated: '" + e + "' has been renamed '" + t + "'. The old method will be removed in the next major version.")) } function ce(e, t) { c !== t && "" !== t && "null" !== t && ie("Body " + e + ' set to "' + (document.body.style[e] = t) + '"') } function se(n) { var e = { add: function (e) { function t() { Oe(n.eventName, n.eventType) } B[e] = t, te(window, e, t, { passive: !0 }) }, remove: function (e) { var t, n = B[e]; delete B[e], t = window, e = e, n = n, t.removeEventListener(e, n, !1) } }; n.eventNames && Array.prototype.map ? (n.eventName = n.eventNames[0], n.eventNames.map(e[n.method])) : e[n.method](n.eventName), ie(ne(n.method) + " event listener: " + n.eventType) } function de(e) { se({ method: e, eventType: "Animation Start", eventNames: ["animationstart", "webkitAnimationStart"] }), se({ method: e, eventType: "Animation Iteration", eventNames: ["animationiteration", "webkitAnimationIteration"] }), se({ method: e, eventType: "Animation End", eventNames: ["animationend", "webkitAnimationEnd"] }), se({ method: e, eventType: "Input", eventName: "input" }), se({ method: e, eventType: "Mouse Up", eventName: "mouseup" }), se({ method: e, eventType: "Mouse Down", eventName: "mousedown" }), se({ method: e, eventType: "Orientation Change", eventName: "orientationchange" }), se({ method: e, eventType: "Print", eventNames: ["afterprint", "beforeprint"] }), se({ method: e, eventType: "Ready State Change", eventName: "readystatechange" }), se({ method: e, eventType: "Touch Start", eventName: "touchstart" }), se({ method: e, eventType: "Touch End", eventName: "touchend" }), se({ method: e, eventType: "Touch Cancel", eventName: "touchcancel" }), se({ method: e, eventType: "Transition Start", eventNames: ["transitionstart", "webkitTransitionStart", "MSTransitionStart", "oTransitionStart", "otransitionstart"] }), se({ method: e, eventType: "Transition Iteration", eventNames: ["transitioniteration", "webkitTransitionIteration", "MSTransitionIteration", "oTransitionIteration", "otransitioniteration"] }), se({ method: e, eventType: "Transition End", eventNames: ["transitionend", "webkitTransitionEnd", "MSTransitionEnd", "oTransitionEnd", "otransitionend"] }), "child" === A && se({ method: e, eventType: "IFrame Resized", eventName: "resize" }) } function le(e, t, n, o) { return t !== e && (e in n || (re(e + " is not a valid option for " + o + "CalculationMethod."), e = t), ie(o + ' calculation method set to "' + e + '"')), e } function fe() { p = le(p, n, Z, "height") } function me() { P = le(P, t, $, "width") } function he() { var e; !0 === i ? (de("add"), e = b < 0, window.MutationObserver || window.WebKitMutationObserver ? e ? ge() : s = function () { function t(e) { function t(e) { !1 === e.complete && (ie("Attach listeners to " + e.src), e.addEventListener("load", i, !1), e.addEventListener("error", r, !1), u.push(e)) } "attributes" === e.type && "src" === e.attributeName ? t(e.target) : "childList" === e.type && Array.prototype.forEach.call(e.target.querySelectorAll("img"), t) } function o(e) { ie("Remove listeners from " + e.src), e.removeEventListener("load", i, !1), e.removeEventListener("error", r, !1), e = e, u.splice(u.indexOf(e), 1) } function n(e, t, n) { o(e.target), Oe(t, n + ": " + e.target.src) } function i(e) { n(e, "imageLoad", "Image loaded") } function r(e) { n(e, "imageLoadFailed", "Image load failed") } function a(e) { Oe("mutationObserver", "mutationObserver: " + e[0].target + " " + e[0].type), e.forEach(t) } var u = [], c = window.MutationObserver || window.WebKitMutationObserver, s = function () { var e = document.querySelector("body"); return s = new c(a), ie("Create body MutationObserver"), s.observe(e, { attributes: !0, attributeOldValue: !1, characterData: !0, characterDataOldValue: !1, childList: !0, subtree: !0 }), s }(); return { disconnect: function () { "disconnect" in s && (ie("Disconnect body MutationObserver"), s.disconnect(), u.forEach(o)) } } }() : (ie("MutationObserver not supported in this browser!"), ge())) : ie("Auto Resize disabled") } function ge() { 0 !== b && (ie("setInterval: " + b + "ms"), T = setInterval(function () { Oe("interval", "setInterval: " + b) }, Math.abs(b))) } function pe(e, t) { var n = 0; return t = t || document.body, n = null !== (n = document.defaultView.getComputedStyle(t, null)) ? n[e] : 0, parseInt(n, o) } function ve(e, t) { for (var n, o = t.length, i = 0, r = ne(e), a = Date.now(), u = 0; u < o; u++)i < (n = t[u].getBoundingClientRect()[e] + pe("margin" + r, t[u])) && (i = n); return a = Date.now() - a, ie("Parsed " + o + " HTML elements"), ie("Element position calculated in " + a + "ms"), L / 2 < (a = a) && ie("Event throttle increased to " + (L = 2 * a) + "ms"), i } function ye(e) { return [e.bodyOffset(), e.bodyScroll(), e.documentElementOffset(), e.documentElementScroll()] } function we(e, t) { var n = document.querySelectorAll("[" + t + "]"); return 0 === n.length && (re("No tagged elements (" + t + ") found on page"), document.querySelectorAll("body *")), ve(e, n) } function be() { return document.querySelectorAll("body *") } function Te(e, t, n, o) { function i() { e in { init: 1, interval: 1, size: 1 } || !(p in N || l && P in N) ? e in { interval: 1 } || ie("No change in size detected") : Ie(t) } var r, a; function u(e, t) { return !(Math.abs(e - t) <= R) } r = c !== n ? n : Z[p](), a = c !== o ? o : $[P](), u(g, r) || l && u(F, a) || "init" === e ? (Se(), Ne(g = r, F = a, e)) : i() } function Ee() { G = Date.now(), Q = null, K = V.apply(X, Y), Q || (X = Y = null) } function Oe(e, t, n, o) { x && e in f ? ie("Trigger event cancelled: " + e) : (e in { reset: 1, resetPage: 1, init: 1 } || ie("Trigger event: " + t), ("init" === e ? Te : _)(e, t, n, o)) } function Se() { x || (x = !0, ie("Trigger event lock on")), clearTimeout(e), e = setTimeout(function () { x = !1, ie("Trigger event lock off"), ie("--") }, m) } function Me(e) { g = Z[p](), F = $[P](), Ne(g, F, e) } function Ie(e) { var t = p; p = n, ie("Reset trigger event: " + e), Se(), Me("reset"), p = t } function Ne(e, t, n, o, i) { var r; !0 === C && (c === i ? i = k : ie("Message targetOrigin: " + i), ie("Sending message to host page (" + (r = I + ":" + (e + ":" + t) + ":" + n + (c !== o ? ":" + o : "")) + ")"), z.postMessage(S + r, i)) } function Ae() { "loading" !== document.readyState && window.parent.postMessage("[iFrameResizerChild]Ready", "*") } }();
+
+        const dateInputs = document.querySelectorAll(".pas-date-input");
+        const errorDiv = document.querySelector("#errorMessageDiv");
+        const formElements = document.getElementsByTagName("form");
+        const gobackButtons = document.querySelectorAll("[data-goback='1']");
+        const optinContainer = document.querySelector(".pas-optin");
+        const submitButton = document.querySelector("[data-submit*='1']");
+        const submitLoader = document.querySelector(".submit-loader");
+        const submitText = document.querySelector(".submit-text");
+        const successDiv = document.querySelector("#successMessageDiv");
+        const formElement = formElements[0];
+
+        if (dateInputs.length > 0) {
+            dateInputs.forEach((input) => {
+                input.addEventListener("input", () => {
+                    let value = input.value;
+                    value = value.replace(/[^\d-./]/g, "");
+                    input.value = value;
+                });
+            });
+        }
+
+        const formScripts = { reset: () => { }, submit: () => { submitForm(); } };
+
+        const formData = {
+            Email: "",
+            Fields: [],
+            CaptchaToken: undefined,
+        };
+
+        function initMessageDivsStyle() {
+            const formHeight = formElement.offsetHeight;
+            const formWidth = formElement.offsetWidth;
+
+            errorDiv.style.minHeight = formHeight + "px";
+            successDiv.style.minHeight = formHeight + "px";
+
+            errorDiv.style.width = formWidth + "px";
+            successDiv.style.width = formWidth + "px";
+        }
+
+        function hideLoader() {
+            submitLoader.style.display = "none";
+            submitText.style.visibility = "visible";
+        }
+
+        function showLoader() {
+            submitLoader.style.display = "block";
+            submitText.style.visibility = "hidden";
+        }
+
+        function changeFormState(state) {
+            switch (state) {
+                case "success":
+                    console.log("success state");
+                    formElement.style.display = "none";
+                    formElement.style.visibility = "hidden";
+
+                    successDiv.style.display = "flex";
+                    successDiv.style.visibility = "visible";
+
+                    errorDiv.style.display = "none";
+                    errorDiv.style.visibility = "hidden";
+                    return;
+                case "error":
+                    formElement.style.display = "none";
+                    formElement.style.visibility = "hidden";
+
+                    successDiv.style.display = "none";
+                    successDiv.style.visibility = "hidden";
+
+                    errorDiv.style.display = "flex";
+                    errorDiv.style.visibility = "visible";
+                    return;
+                default:
+                    formScripts.reset();
+
+                    formElement.style.display = "block";
+                    formElement.style.visibility = "visible";
+
+                    successDiv.style.display = "none";
+                    successDiv.style.visibility = "hidden";
+
+                    errorDiv.style.display = "none";
+                    errorDiv.style.visibility = "hidden";
+                    return;
+            }
+        }
+
+        function extractDateAndTransformToTimestamp(input) {
+            const { pattern, value } = input;
+            // Only parse if value is okay and a separator is found
+            const separatorSearchResult = value.match(/[^0-9]/);
+
+            if (
+                Array.isArray(separatorSearchResult) &&
+                separatorSearchResult.length > 0
+            ) {
+                // Extract the separator
+                const separator = separatorSearchResult[0];
+                const dateParts = value.split(separator);
+                // Determine with pattern the correct position of year, month and day
+                const indexOfYearInPattern = pattern.indexOf("d{4}");
+                const indexOfMonthInPattern = pattern.indexOf("(0?[1-9]|1[012])");
+                const indexOfDayInPattern = pattern.indexOf("(0?[1-9]|[12][0-9]|3[01])");
+                const minNum = Math.min(
+                    indexOfYearInPattern,
+                    indexOfMonthInPattern,
+                    indexOfDayInPattern
+                );
+                const maxNum = Math.max(
+                    indexOfYearInPattern,
+                    indexOfMonthInPattern,
+                    indexOfDayInPattern
+                );
+                const transformations = {
+                    [minNum]: 0,
+                    [indexOfYearInPattern +
+                        indexOfMonthInPattern +
+                        indexOfDayInPattern -
+                        minNum -
+                        maxNum]: 1,
+                    [maxNum]: 2,
+                };
+                // YYYY-MM-DD only valid format to parse
+                // Create an array to map the extracted values to the correct positions
+                const dateInArrayFormat = [
+                    dateParts[transformations[indexOfYearInPattern]],
+                    dateParts[transformations[indexOfMonthInPattern]],
+                    dateParts[transformations[indexOfDayInPattern]],
+                ];
+                // Construct the final date string using the extracted values
+                const finalDateString = dateInArrayFormat.join("-");
+                const finalDate = Date.parse(finalDateString);
+                // Transform to unix timestamp (seconds)
+                return finalDate / 1000;
+            }
+        }
+
+        function cancelFormSubmission() {
+            submitButton.removeAttribute("disabled");
+            hideLoader();
+        }
+
+        function submitForm() {
+            console.log("submit form");
+            if (formData.CaptchaToken !== undefined && formData.CaptchaToken === "") {
+                cancelFormSubmission();
+                return;
+            }
+
+            fetch("https://12phv.mjt.lu/wgt/12phv/0h1u/subscribe?c=98b87bc1", {
+                method: "POST",
+                mode: "cors",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            })
+                .then((response) => {
+                    if (!response.ok) {
+                        throw new Error("Server response is not ok.");
+                    }
+
+                    changeFormState("success");
+                })
+                .catch(() => {
+                    changeFormState("error");
+                })
+                .finally(cancelFormSubmission);
+        }
+
+        function validateForm() {
+            submitButton.setAttribute("disabled", true);
+            showLoader();
+
+            const inputs = document.querySelectorAll("[data-field*='1']");
+            let email = "";
+            let fields = [];
+            let hasErrors = false;
+            const requiredFields = [];
+
+            inputs.forEach((input) => {
+                const isRadio = input.type === "radio";
+                const isDate = input.classList.contains("pas-date-input");
+                const contactProperty = isRadio ? input.name : input.id;
+                let fieldsItem = {};
+
+                if (input.required && input.type !== "email") {
+                    requiredFields.push(contactProperty);
+                }
+
+                if (input.type === "email") {
+                    email = input.value;
+                    if (!input.checkValidity()) {
+                        input.classList.add("on-error");
+                        input.setCustomValidity("Invalid email");
+                        hasErrors = true;
+                    } else {
+                        input.classList.remove("on-error");
+                        input.setCustomValidity("");
+                    }
+                } else {
+                    let value = input.value;
+
+                    if (input.type === "number") {
+                        value = parseFloat(value);
+                    }
+
+                    const isPhone = input.getAttribute("data-type") === "phone";
+                    if (isPhone) {
+                        const phoneCode = document.querySelector(
+                            '[id*="countryCode-' + input.getAttribute("data-phone-id") + '"]'
+                        );
+                        // Use the parseAndConcatPhoneNumber function to have the right phone format from pas-widget-phone-v1 script.
+                        value = parseAndConcatPhoneNumber(phoneCode.textContent, input.value);
+                    }
+
+                    if ((isRadio && input.checked == true) || !isRadio) {
+                        switch (input.dataset.type) {
+                            case "boolean":
+                                value = value === "true" || value === "1";
+                                break;
+                            case "integer":
+                                value = parseInt(value);
+                                break;
+                            case "decimal":
+                                value = parseFloat(value);
+                                break;
+                            default:
+                                break;
+                        }
+                        if (isDate && input.value.length !== 0) {
+                            const pattern = input.pattern;
+                            const regex = new RegExp(pattern);
+
+                            if (!regex.test(input.value)) {
+                                hasErrors = true;
+                                if (!input.classList.contains("on-error")) {
+                                    input.classList.add("on-error");
+                                }
+                                value = undefined;
+                            } else {
+                                value = extractDateAndTransformToTimestamp(input);
+                            }
+                        }
+
+                        if (value !== null && value !== undefined) {
+                            fieldsItem = {
+                                ID: parseInt(contactProperty),
+                                Value: value,
+                            };
+                            fields.push(fieldsItem);
+                        }
+                    }
+                }
+                const consent = optinContainer?.firstChild;
+                const isExplicitConsent = consent?.type === "checkbox";
+                let isPhoneNumber, isNumber;
+                let parentElem = input;
+                if (input.getAttribute("data-type") === "phone") {
+                    isPhoneNumber = true;
+                    parentElem = input.closest(".pas-phone-number");
+                } else if (input.getAttribute("type") === "number") {
+                    isNumber = true;
+                    parentElem = input.closest(".pas-number-container");
+                }
+
+                if (!isRadio && input.required && input.value.length === 0) {
+                    hasErrors = true;
+                    if (
+                        (isNumber || isPhoneNumber) &&
+                        !parentElem.classList.contains("error")
+                    ) {
+                        parentElem.classList.add("error");
+                    } else if (!parentElem.classList.contains("on-error")) {
+                        parentElem.classList.add("on-error");
+                    }
+                }
+
+                if (isPhoneNumber && input.value.length > 0) {
+                    const internationalPhoneNumber = fieldsItem.Value.substring(1);
+                    const number = Number(internationalPhoneNumber);
+                    const isInteger = Number.isInteger(number);
+                    if (isInteger && internationalPhoneNumber.length <= 15) {
+                        parentElem.classList.remove("error");
+                    } else {
+                        hasErrors = true;
+                        parentElem.classList.add("error");
+                    }
+                }
+
+                if (isNumber && input.required && input.value.length > 0) {
+                    parentElem.classList.remove("error");
+                }
+
+                if (isExplicitConsent && !consent.checked) {
+                    hasErrors = true;
+                    if (!consent.classList.contains("on-error")) {
+                        consent.classList.add("on-error");
+                    }
+                }
+            });
+
+            if (requiredFields.length > 0) {
+                const fieldsId = fields.map((field) => field.ID);
+
+                const missingFields = requiredFields.filter(
+                    (field) => !fieldsId.includes(parseInt(field))
+                );
+
+                if (missingFields.length > 0) {
+                    hasErrors = true;
+                    // add error class to missing inputs
+                    const missingInput = document.querySelector(
+                        'input[name="' +
+                        missingFields[0] +
+                        '"], input[id="' +
+                        missingFields[0] +
+                        '"]'
+                    );
+                    if (!missingInput.classList.contains("on-error")) {
+                        missingInput.classList.add("on-error");
+                    }
+                }
+            }
+
+            if (hasErrors) {
+                return;
+            }
+
+            return {
+                email,
+                fields,
+            };
+        }
+
+        function registerSubmitButton() {
+            console.log("Registering submit button");
+            submitButton.onclick = function (e) {
+                e.preventDefault();
+
+                const validatedData = validateForm();
+                if (!validatedData) {
+                    cancelFormSubmission();
+                    return;
+                }
+
+                formData.Email = validatedData.email;
+                formData.Fields = validatedData.fields;
+
+                formScripts.submit();
+            };
+        }
+
+        function registerGobackButtons() {
+            gobackButtons.forEach((gobackButton) => {
+                gobackButton.onclick = function (e) {
+                    e.preventDefault();
+                    changeFormState("default");
+                };
+            });
+        }
+
+        if (submitButton) {
+            registerSubmitButton();
+        }
+
+        if (submitButton && gobackButtons) {
+            registerGobackButtons();
+        }
+
+        window.cancelFormSubmission = cancelFormSubmission;
+        window.submitForm = submitForm;
+        window.addEventListener("load", initMessageDivsStyle);
+
+    </script>
+    <success class="pas-success" id="successMessageDiv"
+        style="display: none; background-color: rgb(255, 255, 255); min-height: 324px; width: 410px;">
+        <div class="pas-column pas-column-lp" style="width: 100%; align-self: center;">
+            <div class="pas-image" style="display: flex; justify-content: center; padding: 10px 0px;"><img
+                    src="https://app.mailjet.com/pas-success-error/success-light.png" title="" alt=""
+                    style="border: none; border-radius: 0; height: auto; max-width: 100%; width: 100px;"></div>
+            <div class="pas-text"
+                style="align: left; color: #000000; font-family: Arial, sans-serif; font-size: 13px; letter-spacing: normal; padding: 10px 25px;">
+                <div class="pas-text-container">
+                    <p style="margin: 10px; text-align: center;">Thanks for signing up! Next, please check your
+                        inbox to confirm your subscription.</p>
+                </div>
+            </div>
+        </div>
+    </success>
+    <error class="pas-error" id="errorMessageDiv"
+        style="display: none; background-color: rgb(255, 255, 255); min-height: 324px; width: 410px;">
+        <column class="pas-column" style="width: 100%; align-self: center;">
+            <div class="pas-image" style="display: flex; justify-content: center; padding: 10px 0px;"><img
+                    class="pas-image" src="https://app.mailjet.com/pas-success-error/error-light.png" alt="" title=""
+                    style="max-width: 100%; height: auto; width: 100px; border: none; border-radius: 0;">
+            </div>
+            <div class="pas-text"
+                style="align: left; color: #000000; font-family: Arial, sans-serif; font-size: 13px; letter-spacing: normal; padding: 10px 25px;">
+                <div class="pas-text-container" style="padding: 10px 25px;">
+                    <p style="margin: 10px; text-align: center;">We're sorry! there was an error and the form
+                        couldn't be submitted.Please try again using a different email address.</p>
+                </div>
+            </div>
+            <div class="pas-goback" style="justify-content: center;"><button data-goback="1"
+                    style="background-color: #414141; border: none; border-radius: 3px; color: #ffffff; font-family: Arial, sans-serif; font-size: 13px; font-weight: normal; text-decoration: none; text-transform: none; vertical-align: middle; margin: 10px 25px; padding: 10px 25px;">Return
+                    to form</button></div>
+        </column>
+    </error>
+
+    <!-- erika's code -->
+    <!-- <iframe data-w-type="embedded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+        src="https://12phv.mjt.lu/wgt/12phv/0h1u/form?c=cd701281" width="100%" style="height: 0;"></iframe>
+
+    <script type="text/javascript" src="https://app.mailjet.com/pas-nc-embedded-v2.js"></script> -->
+
     <footer>
         <img class="logo" src="images/logo.png">
         <h3><br>FRIDAYS 7PM - 11PM<br>UC DAVIS</h3>
